@@ -12,49 +12,73 @@
             background-color: #f4f4f4;
             color: #333;
         }
-        .navbar {
-            background-color: #5a2d82; /* Purple background */
-            color: white; /* White text */
+        .menu {
+            background-color: #5a2d82;
+            color: white;
             padding: 20px 40px;
             text-align: center;
             font-size: 24px;
+            font-weight: bold;
+        }
+        .menu a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
             font-weight: bold;
         }
         .container {
             background-color: white;
             padding: 30px;
             margin: 30px auto;
-            width: 60%; /* Adjusted width to prevent overflow */
+            width: 60%;
             box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-            border-radius: 8px; /* Rounded corners for the container */
+            border-radius: 8px;
+            text-align: center;
+        }
+        .welcome-message {
+            font-size: 24px;
+            font-weight: bold;
+            color: #5a2d82;
+            margin-bottom: 20px;
         }
         img.profile-pic {
-            width: 120px; /* Fixed size for the image */
+            width: 120px;
             height: 160px;
-            border-radius: 10%; /* Circle image */
+            border-radius: 10%;
             display: block;
-            margin: 10px auto; /* Center the image */
+            margin: 10px auto;
         }
         .section {
             margin-top: 30px;
+            text-align: left;
         }
         h2 {
-            color: #5a2d82; /* Purple headings */
-        }
-        ul {
-            list-style-type: none;
-            padding: 0;
-        }
-        li {
-            margin-bottom: 10px;
+            color: #5a2d82;
         }
     </style>
 </head>
 <body>
-    <div class="navbar">Welcome to Dan Bai's Website</div>
+    <!-- Navigation Menu -->
+    <div class="menu">
+        <a href="index.html">Home</a>
+        <a href="Portfolio.html">My Projects</a>
+        <a href="contact.html">Contact</a>
+    </div>
+    
+    <!-- Content -->
     <div class="container">
+        <div class="welcome-message">Welcome to Dan Bai's Website</div>
         <img class="profile-pic" src="Danbai.jpg" alt="Dan Bai">
-        <div class="section">
+        <p>Welcome to my personal portfolio! Here you’ll find a showcase of my professional experiences and skills as a UX/Product Designer.</p>
+
+        <!-- About Me Section -->
+        <div class="section" id="about">
+            <h2>About Me</h2>
+            <p>I am a UX/Product Designer with experience in AI-driven design solutions. My work focuses on user-centered design, creating accessible and impactful digital products.</p>
+        </div>
+
+        <!-- Experience Section -->
+        <div class="section" id="experience">
             <h2>Experience</h2>
             <ul>
                 <li><strong>Radical AI.</strong> 05/2024 - 10/2024<br>AI Product Design Intern</li>
@@ -64,17 +88,20 @@
                 <li><strong>Guangdong University of Foreign Studies.</strong> 05/2017 - 06/2019<br>Design Manager</li>
             </ul>
         </div>
-        <div class="section">
+
+        <!-- Skills Section -->
+        <div class="section" id="skills">
             <h2>Skills</h2>
             <ul>
                 <li><strong>UX Design:</strong> User Experience Design, Design Systems, Responsive User-centered Design, Prototyping, Wireframes, Mobile Applications (Android and iOS), Desktop, Complex Systems, SaaS, Dashboard.</li>
                 <li><strong>Interaction and Motion Design:</strong> User Interface Design, Interaction Design, Motion Design, Animation.</li>
                 <li><strong>Visual Design:</strong> Illustration, Visual Prototyping, Branding.</li>
                 <li><strong>Industry-Specific Design:</strong> B2C, B2B.</li>
-                <li><strong>Research:</strong> User Research, Competitive Review, User Interviews, Contextual Inquiry, Competitor Analysis, Usability Testings, Persona Hypothesis, User Journey Map.</li>
+                <li><strong>Research:</strong> User Research, Competitive Review, User Interviews, Contextual Inquiry, Competitor Analysis, Usability Testing, Persona Hypothesis, User Journey Map.</li>
             </ul>
         </div>
     </div>
 </body>
 </html>
+
 
